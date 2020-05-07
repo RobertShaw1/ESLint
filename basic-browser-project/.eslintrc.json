@@ -1,21 +1,19 @@
 {
-	"extends": "standard",
+	"extends": [
+		"standard",
+		"plugin:compat/recommended"
+	],
 	"env": {
 		"browser": true,
-		"es6": true,
+		"es2020": true,
 		"jest": true,
 		"mocha": true
 	},
-	"parserOptions": {
-		"ecmaVersion": 2018
-	},
-	"plugins": ["compat"],
 	"rules": {
 		"comma-dangle": [
 			"warn",
 			"always-multiline"
 		],
-		"compat/compat": "error",
 		"semi": 0
 	}
 }
